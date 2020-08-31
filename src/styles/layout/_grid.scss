@@ -1,0 +1,7 @@
+.grid-layout {
+  display: grid;
+  margin: 0 auto;
+  max-width: 114rem;
+  grid-column-gap: $gutter-horizontal;
+  grid-row-gap: $gutter-vertical;
+}
