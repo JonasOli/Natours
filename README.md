@@ -2,7 +2,8 @@
 
 ## Project with advanced SASS features
 
-- CSS architecture
+- CSS architecture (BEM)
+- Animations with @keyframes, animation and transition
 - Mixins
 - Variables
 - Functions
