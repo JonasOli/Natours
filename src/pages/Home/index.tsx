@@ -1,5 +1,6 @@
 import React from "react";
 import { About } from "../../components/About";
+import { Booking } from "../../components/Booking";
 import { Feature } from "../../components/Features";
 import { Header } from "../../components/Header";
 import { Story } from "../../components/Story";
@@ -14,6 +15,7 @@ export const Home = () => {
       <Feature />
       <Tours />
       <Story />
+      <Booking />
     </>
   );
 };
