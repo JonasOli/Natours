@@ -3,7 +3,7 @@ import "./style.scss";
 
 export const Tours = () => {
   return (
-    <section className="section-tours">
+    <section className="section-tours" id="section-tours">
       <div className="u-center-text u-margin-bottom-big">
         <h2 className="heading-secondary">Most popular tours</h2>
       </div>
@@ -34,7 +34,7 @@ export const Tours = () => {
                 <p className="card__price-value">$297</p>
               </div>
 
-              <a href="#teste" className="btn btn--white">
+              <a href="#popup" className="btn btn--white">
                 Book now!
               </a>
             </div>
@@ -65,7 +65,7 @@ export const Tours = () => {
                 <p className="card__price-value">$497</p>
               </div>
 
-              <a href="#teste" className="btn btn--white">
+              <a href="#popup" className="btn btn--white">
                 Book now!
               </a>
             </div>
@@ -96,7 +96,7 @@ export const Tours = () => {
                 <p className="card__price-value">$897</p>
               </div>
 
-              <a href="#teste" className="btn btn--white">
+              <a href="#popup" className="btn btn--white">
                 Book now!
               </a>
             </div>

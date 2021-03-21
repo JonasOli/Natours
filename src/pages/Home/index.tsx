@@ -5,6 +5,7 @@ import { Feature } from "../../components/Features";
 import { Footer } from "../../components/Footer";
 import { Header } from "../../components/Header";
 import { Navigation } from "../../components/Navigation";
+import { Popup } from "../../components/Popup";
 import { Story } from "../../components/Story";
 import { Tours } from "../../components/Tours";
 import "./style.scss";
@@ -20,6 +21,7 @@ export const Home = () => {
       <Story />
       <Booking />
       <Footer />
+      <Popup />
     </>
   );
 };

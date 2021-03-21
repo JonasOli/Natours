@@ -14,7 +14,7 @@ export const Header = () => {
           <span className="heading-primary--sub">is where life happens</span>
         </h1>
 
-        <a href="#teste" className="btn btn--white btn--animated">
+        <a href="#section-tours" className="btn btn--white btn--animated">
           Discover our tours
         </a>
       </div>
