@@ -1,4 +1,5 @@
 @import "../../styles/abstracts/variables";
+@import "../../styles/abstracts/mixins";
 
 .section-features {
   padding: 20rem 0;
@@ -14,6 +15,10 @@
 
   & > * {
     transform: skewY(7deg);
+  }
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
   }
 
   &__grid {

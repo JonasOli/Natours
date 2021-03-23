@@ -1,7 +1,15 @@
 .grid-layout {
   display: grid;
   margin: 0 auto;
-  max-width: 114rem;
+  max-width: $grid-max-width;
   grid-column-gap: $gutter-horizontal;
   grid-row-gap: $gutter-vertical;
+
+  @include respond(tab-port) {
+    grid-template-columns: 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: $gutter-vertical-small;
+    max-width: 50rem;
+    padding: 0 3rem;
+  }
 }
