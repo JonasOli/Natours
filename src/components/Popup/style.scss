@@ -15,27 +15,62 @@
   opacity: 0;
   transition: all 0.3s;
 
+  @supports (-webkit-backdrop-filter: blur(10px)) or
+    (backdrop-filter: blur(10px)) {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+
   &__content {
     @include center_horizontal_vertical;
     width: 75%;
     background-color: $color-white;
     border-radius: 4px;
     display: grid;
-    grid-template-columns: 33.33333% 66.66667%;
+    grid-template-columns: 33.33333fr 66.66667fr;
     overflow: hidden;
     opacity: 0;
-    transform: translate(-50%, -50%) scale(.25);
+    transform: translate(-50%, -50%) scale(0.25);
     transition: all 0.4s 0.2s;
+
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 2.3fr 7.7fr;
+    }
   }
 
   &__right {
     align-self: center;
     padding: 3rem 5rem;
+
+    @include respond(phone) {
+      padding: 1rem 2rem;
+    }
+  }
+
+  &__left {
+    @include respond(phone) {
+      display: flex;
+    }
   }
 
   &__img {
     display: block;
     width: 100%;
+
+    @include respond(phone) {
+      width: 50%;
+
+      &:first-child {
+        grid-column-start: 1;
+        grid-column-end: 2;
+      }
+
+      &:last-child {
+        grid-column-start: 2;
+        grid-column-end: 3;
+      }
+    }
   }
 
   &__text {
@@ -45,6 +80,11 @@
     column-gap: 4rem;
     column-rule: 1px solid $color-gray-light-2;
     hyphens: auto;
+
+    @include respond(phone) {
+      column-count: 1;
+      margin-bottom: 2rem;
+    }
   }
 
   &:target {
